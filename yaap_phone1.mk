@@ -8,15 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from Spacewar device
-$(call inherit-product, device/nothing/Spacewar/device.mk)
+# Inherit from phone1 device
+$(call inherit-product, device/nothing/phone1/device.mk)
 
 # Inherit vendor configaration
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_Spacewar
-PRODUCT_DEVICE := Spacewar
+PRODUCT_NAME := yaap_phone1
+PRODUCT_DEVICE := phone1
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A063
 PRODUCT_MANUFACTURER := Nothing

@@ -19,7 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/nothing/Spacewar',
+    'vendor/nothing/phone1',
     'hardware/qcom-caf/sm8350',
     'hardware/qcom-caf/wlan',
     'hardware/nothing',
@@ -59,7 +59,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'Spacewar',
+    'phone1',
     'nothing',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

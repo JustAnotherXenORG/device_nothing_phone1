@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_Spacewar.mk
+    $(LOCAL_DIR)/yaap_phone1.mk
