@@ -329,9 +329,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils_prd.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
