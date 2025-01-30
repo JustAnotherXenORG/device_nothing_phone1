@@ -1508,6 +1508,18 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
+# Vibrator
+odm/etc/aac_richtap.config
+vendor/bin/hw/vendor.qti.hardware.vibrator.service
+vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
+vendor/lib/hw/vibrator.default.so
+vendor/lib64/hw/vibrator.default.so
+vendor/lib64/libaacvibrator.so
+vendor/lib64/libqtivibratoreffect.so
+vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so
+vendor/lib64/vendor.qti.hardware.vibrator.impl.so
+
 # VPU firmware
 vendor/firmware/vpu20_1v.b01
 vendor/firmware/vpu20_1v.b02
