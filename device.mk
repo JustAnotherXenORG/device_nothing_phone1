@@ -18,8 +18,7 @@ $(call inherit-product, vendor/nothing/Spacewar/Spacewar-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -32,6 +31,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/lineage/interfaces/power-libperfmgr \
     vendor/qcom/opensource/usb/etc
+# Platform
+TARGET_BOARD_PLATFORM := lahaina
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -245,6 +246,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # Media
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v1.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v1.xml \
