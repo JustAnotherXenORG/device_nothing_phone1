@@ -242,10 +242,6 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti.nothing
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # Media
 TARGET_SUPPORTS_OMX_SERVICE := false
 
