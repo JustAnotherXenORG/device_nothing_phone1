@@ -272,6 +272,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/nothing/nt-fwk/nt-fwk.mk)
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
